@@ -69,6 +69,7 @@ int main(int argc, char *argv[]) {
       processTheEvent(club, current_time, id, name, table_id);
     } catch (const ClubException &e) {
       std::cout << e.what() << std::endl;
+      return 1;
     }
   }
   in.close();
